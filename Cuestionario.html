@@ -1,0 +1,57 @@
+<html>
+    <!--CABECERA: Info que el usuario no va a utilizar, pero sí es importante para el servidor/navegador-->
+    <head>  
+        <meta charset="UTF-8">
+        <!--Título de la página web -->
+        <title>Título de nuestra primera web</title>
+        <!--Establecer un icóno para la página web (favico.con)-->
+        <link rel="shortcut icon" type="image/x-icon" href="Foto">
+    </head>
+
+    <!--CUERPO: Info que afecta directamente al usuario-->
+    <body>
+ 
+            <h2>Satisfacción con Inditex</h2>
+            <p>Rellene el cuestionrio para ayudarnos a mejorar. ¡Gracias!</p>
+            <form>
+                <p align ="center">
+                    
+                    <label for="nombre">Ingrese su nombre: </label> 
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" pattern="[a-z]+">
+                    <label for="contraseña">Ingrese su apellido</label> 
+                    <input type="password"  placeholder="Apelido" name="apellido" id="apellido">
+                </p>
+                <p align="center">
+                    <label for="nombre">Introduzca la fecha: </label> 
+                    <input type="date" id="fecha" name="Fecha" value="fecha"min="2022-01-01" >
+                    <label for="nombre">Introduzca su correo electrónico: </label>
+                    <input type="email" id="correo" name="Correo"  placeholder="Correo electrónico">
+                </p>
+                <p align ="center">
+                    Nivel de satisfacción: <select name="Nivel de satisfacción" id="">
+                        <option value="" name="" id="">Satisfacción</option>
+                        <option value="Muy bajo" name="opciones" id="opciones1">Muy bajo</option>
+                        <option value="Bajo" name="opciones" id="opciones2">Bajo</option>
+                        <option value="Medio" name="opciones" id="opciones3">Medio</option>
+                        <option value="Alto" name="opciones" id="opciones4">Alto</option>
+                        <option value="Muy alto" name="opciones" id="opciones5">Muy alto</option>
+                        
+                    </select>
+                </p>
+
+                <p align="center">
+                    <textarea name="textarea" rows="10" cols="50" placeholder="Escriba su sugerencia"></textarea>
+                </p> 
+                <br />
+                
+                <p align="center">
+                    <input type="submit" value="Enviar info">
+                </p>
+                 
+               
+            </form>
+        </p>
+        
+    </body>
+
+</html>
